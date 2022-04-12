@@ -1,0 +1,85 @@
+#include <iostream>
+
+using namespace std;
+
+
+int main() {
+
+    int a, b, x, p;
+
+    string txt;
+
+    cout << "If you want to run program, write RUN" << endl;
+
+    
+
+    cin >> txt;
+
+    if(txt == "RUN") {
+
+        cout << "How many metres of fence do you want to use?" << endl;
+
+        cin >> x;
+
+        cout << "Meters of fence to be used: " << x << endl;
+
+        if (x>0){
+
+            /*
+
+                x = b + 2a
+
+                b = x - 2a
+
+                P = ab = xa - 2a^2
+
+                P' = x - 4a
+
+                0 = x - 4a
+
+                x = 4a
+
+                a = x / 4
+
+                b = x - (x / 2)
+
+                P = (x / 4) * (x / 2)
+
+                P = (x ^ 2) / 8
+
+            */
+
+            a = x / 4;
+
+            b = x - ( x / 2);
+
+            p = x * x / 8; 
+
+            cout << "a=" << a << endl;
+
+            cout << "b=" << b << endl;
+
+            cout << "Area is: " << p;
+
+            
+
+        }
+
+        else {
+
+            cout<<"Wrong data was provided";
+
+        }
+
+    }
+
+    else {
+
+        cout<<"Goodbye";
+
+    }
+
+    return 0;
+
+}
+
